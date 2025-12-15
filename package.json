@@ -1,0 +1,31 @@
+{
+  "name": "flp-oversease",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "start:all": "concurrently \"npm run dev\" \"npm run server\"",
+    "server": "nodemon server/index.js",
+    "lint": "eslint"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "express": "^5.2.1",
+    "mongoose": "^9.0.1",
+    "multer": "^2.0.2",
+    "next": "16.0.10",
+    "next-intl": "^4.6.0",
+    "react": "19.2.1",
+    "react-dom": "19.2.1"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "eslint": "^9",
+    "eslint-config-next": "16.0.10",
+    "nodemon": "^3.1.11",
+    "tailwindcss": "^4"
+  }
+}
