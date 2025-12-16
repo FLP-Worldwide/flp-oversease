@@ -1,17 +1,23 @@
+import Hero from '@/components/home/Hero';
+import Header from '../../components/layout/Header';
 import { getMessages } from '../../i18n';
+import Features from '@/components/home/Features';
+import ContactForm from '@/components/home/ContactForm';
+import Footer from '@/components/layout/Footer';
 
-export default async function HomePage({ params }) {
-  const { locale } = await params; // ✅ IMPORTANT FIX
-  const messages = await getMessages(locale);
+export default async function Page({ params }) {
+  const { locale } = await params;
+  const t = await getMessages(locale);
 
   return (
-    <main className="p-10">
-      <h1 className="text-3xl font-bold">
-        {messages.title}
-      </h1>
-      <p className="mt-4">
-        {messages.description}
-      </p>
-    </main>
+    <>
+      <Header currentLang={locale} t={t} />
+      {/* rest of page */}
+      <Hero t={t} />
+      <Features t={t} />
+      <ContactForm t={t} />
+
+      <Footer t={t} />
+    </>
   );
 }

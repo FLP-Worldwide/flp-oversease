@@ -1,4 +1,78 @@
 {
-  "title": "Willkommen",
-  "description": "Dies ist eine deutsche Seite"
+  "nav": {
+    "home": "Startseite",
+    "about": "Über uns",
+    "services": "Dienstleistungen",
+    "contact": "Kontakt",
+    "cta": "Anruf buchen"
+  },
+
+  "hero": {
+    "title": "Top-Talente mit führenden Chancen verbinden",
+    "subtitle": "Wir sind auf internationale Personalvermittlung spezialisiert. Werden Sie Teil unseres Teams in Dubai, Europa und darüber hinaus.",
+    "primaryBtn": "Jetzt bewerben",
+    "secondaryBtn": "Für Arbeitgeber"
+  },
+
+  "stats": {
+    "govt": "Genehmigt von der Regierung Indiens",
+    "license1": "Ministerium für Unternehmensangelegenheiten",
+    "license2": "Ministerium für auswärtige Angelegenheiten"
+  },
+
+  "services": {
+    "heading": "Entdecken Sie unsere professionellen Dienstleistungen",
+    "subheading": "Umfassende Lösungen für globale Arbeitsmobilität.",
+    "list": [
+      {
+        "title": "Personalbereitstellung",
+        "desc": "Bereitstellung umfassender Lösungen für die internationale Rekrutierung."
+      },
+      {
+        "title": "Studentenvisum",
+        "desc": "Beratung und Abwicklung für Studierende, die im Ausland studieren möchten."
+      },
+      {
+        "title": "Managementberatung",
+        "desc": "Strategische Beratung zur Verbesserung von Leistung und Effizienz."
+      },
+      {
+        "title": "Personalberatung",
+        "desc": "End-to-End-Rekrutierungsdienste für spezialisierte Branchen."
+      }
+    ]
+  },
+
+  "industries": {
+    "list": [
+      { "title": "Medizin & Gesundheitswesen" },
+      { "title": "Logistikbranche" },
+      { "title": "Bauwesen" },
+      { "title": "Öl & Gas" }
+    ]
+  },
+
+  "form": {
+    "heading": "Beginnen Sie Ihre Reise",
+    "subheading": "Egal ob Sie einstellen oder einen Job suchen – wir helfen Ihnen.",
+    "namePlaceholder": "Vollständiger Name",
+    "emailPlaceholder": "E-Mail-Adresse",
+    "phonePlaceholder": "Kontakt номер",
+    "fileLabel": "Lebenslauf / Dokument hochladen",
+    "submitBtn": "Bewerbung absenden",
+    "tabCandidate": "Ich bin Bewerber",
+    "tabEmployer": "Ich bin Arbeitgeber",
+    "messagePlaceholder": "Erzählen Sie uns von Ihren Anforderungen..."
+  },
+
+  "countries": [
+    "Saudi-Arabien",
+    "Kuwait",
+    "Russland",
+    "Katar",
+    "VAE",
+    "Großbritannien",
+    "Australien",
+    "Singapur"
+  ]
 }
