@@ -43,7 +43,7 @@ export default function Features({ t }) {
     '🇦🇪',
     '🇬🇧',
     '🇦🇺',
-    '🇸🇬'
+
   ];
 
   return (

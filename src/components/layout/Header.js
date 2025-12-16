@@ -43,15 +43,15 @@ export default function Header({ currentLang, t }) {
       <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
         {/* Logo */}
         <div className="flex items-center gap-2">
-          <div className="w-10 h-10 bg-emerald-400 rounded-xl flex items-center justify-center">
-            <span className="text-emerald-950 font-bold text-xl">S</span>
+          <div className="w-15 h-10 bg-emerald-500 rounded-xl flex items-center justify-center">
+            <span className="text-emerald-950 text-white font-bold text-xl">FLP</span>
           </div>
           <div
             className={`text-xl font-bold tracking-tight ${
               isScrolled ? 'text-white' : 'text-emerald-950'
             }`}
           >
-            SELECTRA<span className="text-emerald-400">.</span>
+            Oversease<span className="text-emerald-400">.</span>
           </div>
         </div>
 

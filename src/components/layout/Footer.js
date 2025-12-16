@@ -18,10 +18,10 @@ export default function Footer() {
         {/* Brand */}
         <div>
           <div className="flex items-center gap-2 mb-6">
-            <div className="w-8 h-8 bg-emerald-400 rounded-lg flex items-center justify-center">
-              <span className="text-emerald-950 font-bold">S</span>
+            <div className="w-12 h-8 bg-emerald-400 rounded-lg flex items-center justify-center">
+              <span className="text-emerald-950 text-white font-bold">FLP</span>
             </div>
-            <span className="font-bold text-xl">SELECTRA.</span>
+            <span className="font-bold text-xl">Oversease.</span>
           </div>
           <p className="text-emerald-200/60 text-sm leading-relaxed">
             A premium government approved overseas recruitment agency dedicated
