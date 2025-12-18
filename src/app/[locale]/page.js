@@ -4,6 +4,8 @@ import { getMessages } from '../../i18n';
 import Features from '@/components/home/Features';
 import ContactForm from '@/components/home/ContactForm';
 import Footer from '@/components/layout/Footer';
+import LicensesSection from '@/components/home/LicensesSection';
+import AboutSection from '@/components/home/AboutSection';
 
 export default async function Page({ params }) {
   const { locale } = await params;
@@ -14,6 +16,8 @@ export default async function Page({ params }) {
       <Header currentLang={locale} t={t} />
       {/* rest of page */}
       <Hero t={t} />
+      <LicensesSection t={t} />
+      <AboutSection t={t} />
       <Features t={t} />
       <ContactForm t={t} />
 

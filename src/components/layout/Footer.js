@@ -9,6 +9,7 @@ import {
   Linkedin,
   Instagram
 } from 'lucide-react';
+import Image from 'next/image';
 
 export default function Footer() {
   return (
@@ -17,11 +18,15 @@ export default function Footer() {
         
         {/* Brand */}
         <div>
-          <div className="flex items-center gap-2 mb-6">
-            <div className="w-12 h-8 bg-emerald-400 rounded-lg flex items-center justify-center">
-              <span className="text-emerald-950 text-white font-bold">FLP</span>
-            </div>
-            <span className="font-bold text-xl">Oversease.</span>
+          <div className="w-60 h-15 rounded-xl flex items-center overflow-hidden">
+            <Image
+              src={'/images/logo1.png'}
+              alt="FLP Overseas Logo"
+              width={220}
+              height={40}
+              className="object-contain"
+              priority
+            />
           </div>
           <p className="text-emerald-200/60 text-sm leading-relaxed">
             A premium government approved overseas recruitment agency dedicated
@@ -35,17 +40,16 @@ export default function Footer() {
           <ul className="space-y-4 text-sm text-emerald-100/80">
             <li className="flex items-center gap-3">
               <Mail size={16} className="text-emerald-500" />
-              <span>info@selectraoverseas.com</span>
+              <span>info@flpworldwide.com</span>
             </li>
             <li className="flex items-center gap-3">
               <Phone size={16} className="text-emerald-500" />
-              <span>+91-9871804422</span>
+              <span>+91-92571 13138</span>
             </li>
             <li className="flex items-start gap-3">
               <MapPin size={16} className="text-emerald-500 mt-1" />
               <span>
-                Unit No-1173-1174, 11th Floor, Plot no.6, Vegas Mall,
-                Dwarka Sector-14, Delhi-110075
+                2nd & 3rd Floor, Kesari Plaza, Kanta Kalwar Rd, Sindhi Colony Extension, Shivpuri, Jhotwara, Jaipur, Rajasthan 302012
               </span>
             </li>
           </ul>
@@ -107,7 +111,7 @@ export default function Footer() {
       {/* Bottom Bar */}
       <div className="max-w-7xl mx-auto px-6 pt-8 border-t border-emerald-900 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-emerald-100/40">
         <p>
-          © 2025 Selectra Overseas Pvt Ltd. All rights reserved.
+          © 2025 FLP Overseas Pvt Ltd. All rights reserved.
         </p>
         <div className="flex gap-6">
           <a href="#" className="hover:text-white">

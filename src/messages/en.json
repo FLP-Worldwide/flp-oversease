@@ -7,13 +7,25 @@
     "cta": "Book a Call"
   },
 
-  "hero": {
-    "title": "Connecting Top Talent with Leading Opportunities",
-    "subtitle": "We are specialized in international recruitment. Join our team in Dubai, Europe, and beyond. A great opportunity to learn, grow, and advance your career.",
-    "primaryBtn": "Apply Now",
-    "secondaryBtn": "For Employers"
-  },
-
+"hero": {
+  "title": "Choose now one of the best solutions for recruiting domestic and international workers",
+  "titleAlt": "Recruitment of domestic and international workers in all fields now in your fingertips",
+  "subtitle": "We are specialized in international recruitment. Join our team in Dubai, Europe, and beyond. A great opportunity to learn, grow, and advance your career.",
+  "primaryBtn": "Request a Call",
+  "secondaryBtn": "For Employers"
+},
+"about": {
+  "badge": "About Us",
+  "title": "Trusted International Recruitment Partner",
+  "subtitle": "We help companies hire reliable domestic and international workers while supporting candidates with transparent, legal, and ethical recruitment practices.",
+  "points": [
+    "Government compliant recruitment process",
+    "Skilled & verified workforce",
+    "End-to-end hiring support",
+    "Trusted by European employers"
+  ]
+}
+,
   "stats": {
     "govt": "Approved By Government Of India",
     "license1": "Ministry Of Corporate Affairs (Lic: U78100DL2023PTC421528)",
@@ -48,7 +60,9 @@
       { "title": "Medical & Health Care" },
       { "title": "Logistic Industry" },
       { "title": "Construction" },
-      { "title": "Oil & Gas" }
+      { "title": "Oil & Gas" },
+      { "title": "Logistic Industry" },
+      { "title": "Construction" }
     ]
   },
 
@@ -65,13 +79,14 @@
     "messagePlaceholder": "Tell us about your requirements..."
   },
 
-  "countries": [
-    "Saudi Arabia",
-    "Kuwait",
-    "Russia",
-    "Qatar",
-    "UAE",
-    "UK",
-    "Australia"
-  ]
+"countries": [
+  "Germany",
+  "Spain",
+  "Poland",
+  "France",
+  "Italy",
+  "Netherlands",
+  "Belgium"
+]
+
 }

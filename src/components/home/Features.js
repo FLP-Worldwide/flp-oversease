@@ -25,6 +25,8 @@ export default function Features({ t }) {
     Stethoscope,
     Anchor,
     HardHat,
+    Globe2,
+    HardHat,
     Globe2
   ];
 
@@ -32,19 +34,13 @@ export default function Features({ t }) {
     'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&q=80&w=600',
     'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&q=80&w=600',
     'https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&q=80&w=600',
+    'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMPgFWzSZNYGZnNgqe2rcIQ2PBpPPg4Icudw&s',
+    'https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&q=80&w=600',
     'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMPgFWzSZNYGZnNgqe2rcIQ2PBpPPg4Icudw&s'
   ];
 
-  const COUNTRY_FLAGS = [
-    '🇸🇦',
-    '🇰🇼',
-    '🇷🇺',
-    '🇶🇦',
-    '🇦🇪',
-    '🇬🇧',
-    '🇦🇺',
+const COUNTRY_FLAGS = ['🇩🇪', '🇪🇸', '🇵🇱', '🇫🇷', '🇮🇹', '🇳🇱', '🇧🇪'];
 
-  ];
 
   return (
     <div className="bg-white rounded-t-[50px] -mt-10 relative z-20 pb-20">

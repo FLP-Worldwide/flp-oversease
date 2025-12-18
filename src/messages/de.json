@@ -48,7 +48,9 @@
       { "title": "Medizin & Gesundheitswesen" },
       { "title": "Logistikbranche" },
       { "title": "Bauwesen" },
-      { "title": "Öl & Gas" }
+      { "title": "Öl & Gas" },
+      { "title": "Logistikbranche" },
+      { "title": "Bauwesen" }
     ]
   },
 
@@ -65,13 +67,14 @@
     "messagePlaceholder": "Erzählen Sie uns von Ihren Anforderungen..."
   },
 
-  "countries": [
-    "Saudi-Arabien",
-    "Kuwait",
-    "Russland",
-    "Katar",
-    "VAE",
-    "Großbritannien",
-    "Australien"
-  ]
+"countries": [
+  "Deutschland",
+  "Spanien",
+  "Polen",
+  "Frankreich",
+  "Italien",
+  "Niederlande",
+  "Belgien"
+]
+
 }

@@ -3,6 +3,9 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X, ChevronDown } from 'lucide-react';
 import { usePathname, useRouter } from 'next/navigation';
+import Image from 'next/image';
+import NavLink from '../ui/NavLink';
+import AnnouncementBar from './AnnouncementBar';
 
 export default function Header({ currentLang, t }) {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -11,6 +14,7 @@ export default function Header({ currentLang, t }) {
 
   const router = useRouter();
   const pathname = usePathname();
+  const locale = pathname.split('/')[1] || currentLang;
 
   // 👇 languages inline (no constants)
   const languages = [
@@ -33,6 +37,8 @@ export default function Header({ currentLang, t }) {
   };
 
   return (
+<>
+      {/* <AnnouncementBar /> */}
     <nav
       className={`fixed w-full z-50 transition-all duration-300 ${
         isScrolled
@@ -42,25 +48,42 @@ export default function Header({ currentLang, t }) {
     >
       <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
         {/* Logo */}
-        <div className="flex items-center gap-2">
-          <div className="w-15 h-10 bg-emerald-500 rounded-xl flex items-center justify-center">
-            <span className="text-emerald-950 text-white font-bold text-xl">FLP</span>
+          <div className="flex items-center gap-2">
+            <div className="w-60 h-15 rounded-xl flex items-center justify-center overflow-hidden">
+              <Image
+                src={isScrolled ? '/images/logo1.png' : '/images/logo.svg'}
+                alt="FLP Overseas Logo"
+                width={220}
+                height={40}
+                className="object-contain"
+                priority
+              />
+            </div>
+
+            {/* <div
+              className={`text-xl font-bold tracking-tight ${
+                isScrolled ? 'text-white' : 'text-emerald-950'
+              }`}
+            >
+              Oversease<span className="text-emerald-400">.</span>
+            </div> */}
           </div>
-          <div
-            className={`text-xl font-bold tracking-tight ${
-              isScrolled ? 'text-white' : 'text-emerald-950'
-            }`}
-          >
-            Oversease<span className="text-emerald-400">.</span>
-          </div>
-        </div>
+
+
 
         {/* Desktop Nav */}
         <div className="hidden md:flex items-center gap-8">
-          <a href="#home" className={`text-sm font-medium hover:text-emerald-400 ${isScrolled ? 'text-gray-200' : 'text-emerald-900'}`}>{t.nav.home}</a>
+          
+           <NavLink href={`/${locale}/`} isScrolled={isScrolled}>
+            {t.nav.home}
+          </NavLink>
           <a href="#about" className={`text-sm font-medium hover:text-emerald-400 ${isScrolled ? 'text-gray-200' : 'text-emerald-900'}`}>{t.nav.about}</a>
           <a href="#services" className={`text-sm font-medium hover:text-emerald-400 ${isScrolled ? 'text-gray-200' : 'text-emerald-900'}`}>{t.nav.services}</a>
-          <a href="#contact" className={`text-sm font-medium hover:text-emerald-400 ${isScrolled ? 'text-gray-200' : 'text-emerald-900'}`}>{t.nav.contact}</a>
+          
+          <NavLink href={`/${locale}/contact/`} isScrolled={isScrolled}>
+            {t.nav.contact}
+          </NavLink>
+
         </div>
 
         {/* Desktop Actions */}
@@ -152,5 +175,6 @@ export default function Header({ currentLang, t }) {
         </div>
       )}
     </nav>
+    </>
   );
 }
